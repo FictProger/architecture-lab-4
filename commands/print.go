@@ -10,6 +10,6 @@ type printCommand struct {
 	arg string
 }
 
-func (print *PrintCommand) Execute(loop engine.Handler) {
+func (print *printCommand) Execute(loop engine.Handler) {
 	fmt.Println(print.arg)
 }
