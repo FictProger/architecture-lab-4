@@ -6,10 +6,10 @@ import (
 	"github.com/FictProger/architecture-lab-4/engine"
 )
 
-type PrintCommand struct {
+type printCommand struct {
 	Arg string
 }
 
-func (print *PrintCommand) Execute(loop engine.Handler) {
+func (print *printCommand) Execute(loop engine.Handler) {
 	fmt.Println(print.Arg)
 }
